@@ -48,7 +48,7 @@ const SortArrow = ({direction}) =>{
 
 
 
- 	const orderedCountries = orderBy(countries,value,direction)
+ 	const orderedCountries = orderBy(countries,value,direction) || []
 
  	const switchDirection = e =>{
  		 if (!direction) {
