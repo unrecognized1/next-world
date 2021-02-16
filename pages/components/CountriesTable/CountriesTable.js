@@ -2,7 +2,7 @@ import styles from './CountriesTable.module.css'
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown'
 import KeyboardArrowUpRounded from '@material-ui/icons/KeyboardArrowUpRounded'
 import {useState} from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 const orderBy = (countries,value,direction) =>{
 	if (direction === 'asc'){
 		return [...countries].sort((a,b)=>(a[value]>b[value] ? 1 : -1))
